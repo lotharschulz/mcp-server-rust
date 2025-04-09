@@ -1,4 +1,4 @@
-## Step 2: Relase the Rust & Javascript/TS code
+## Step 1: Relase the Rust & Javascript/TS code
 
 ### Release
 ```sh
@@ -29,7 +29,7 @@ locations:
 - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 (source: https://modelcontextprotocol.info/docs/quickstart/user/#2-add-the-filesystem-mcp-server)
 
-## Step 4: Start Claude Desktop
+## Step 3: Start Claude Desktop
 
 TODO
 
