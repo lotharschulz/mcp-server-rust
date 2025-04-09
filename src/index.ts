@@ -17,12 +17,12 @@ globalThis.fetch = fetch as any; // Polyfill fetch for Node.js
 // to ensure the dependencies are installed and the wasm module is built and the lib folder is created
 import init, { factorial } from "./lib/rust-functions-lib/pkg/rust_funcations_lib.js";
 
-// Initialize the Wasm module before calling the function
+// Initialize the wasm module before calling the function
 // avoid using the default import to work around 
 // TypeError - URL scheme "file" is not supported.
 const wasmPath = fileURLToPath(new URL("./lib/rust-functions-lib/pkg/rust_funcations_lib_bg.wasm", import.meta.url));
-const wasmBytes = await readFile(wasmPath); // Read the Wasm file from the filesystem
-await init(wasmBytes); // Initialize the Wasm module with the file contents
+const wasmBytes = await readFile(wasmPath); // Read the wasm file from the filesystem
+await init(wasmBytes); // Initialize the wasm module with the file contents
 
 
 const TOOL_NAME = "factorial_of_a_number";
