@@ -46,6 +46,12 @@ Observe the mcp server function:
 
 ![factorial function used](factorial_function_used_in-claude_desktop_detail.png)
 
+### Video
+
+### Video
+
+<iframe width="560" height="315" src="https://youtu.be/DlD7uWniNyE" frameborder="0" allowfullscreen></iframe>
+
 ## Misc
 
 ### Test the rust code
