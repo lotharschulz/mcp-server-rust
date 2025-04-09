@@ -48,7 +48,7 @@ Observe the mcp server function:
 
 ## Misc
 
-### test the rust code
+### Test the rust code
 
 ```sh
 npm run test:rust
@@ -61,7 +61,7 @@ cd src/lib/rust-functions-lib
 cargo test && cargo fmt --all -- --check
 ```
 
-### clean the output files and folders
+### Clean the output files and folders
 
 ```sh
 npm run clean
