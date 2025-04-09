@@ -1,0 +1,7 @@
+build
+node_modules
+target
+package-lock.json
+src/lib/rust-functions-lib/pkg
+Cargo.lock
+.DS_Store

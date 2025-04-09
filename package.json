@@ -1,0 +1,32 @@
+{
+    "name": "mcp-server",
+    "version": "0.1.0",
+    "description": "A Model Context Protocol server example",
+    "private": true,
+    "type": "module",
+    "bin": {
+        "mcp-server": "./build/index.js"
+    },
+    "files": [
+        "build"
+    ],
+    "scripts": {
+        "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+        "prepare": "npm run build",
+        "watch": "tsc --watch",
+        "inspector": "npx @modelcontextprotocol/inspector build/index.js",
+        "clean": "rm -rf build && rm -rf node_modules && rm -rf package-lock.json && rm -rf src/lib/rust-functions-lib/pkg",
+        "wasm:setup": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && sh -c '. $HOME/.cargo/env && cargo install wasm-pack'",
+        "build:wasm": ". $HOME/.cargo/env && wasm-pack build --target web ./src/lib/rust-functions-lib --out-dir ./pkg",
+        "build:wasm:release": ". $HOME/.cargo/env && wasm-pack build --target web ./src/lib/rust-functions-lib --out-dir ./pkg --release && mkdir -p build/lib/rust-functions-lib/pkg && cp src/lib/rust-functions-lib/pkg/rust_funcations_lib.js build/lib/rust-functions-lib/pkg/rust_funcations_lib.js && cp src/lib/rust-functions-lib/pkg/rust_funcations_lib_bg.wasm build/lib/rust-functions-lib/pkg/rust_funcations_lib_bg.wasm",
+        "test:rust": "cd src/lib/rust-functions-lib && . $HOME/.cargo/env && cargo test && cargo fmt --all -- --check"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "0.6.0",
+        "node-fetch": "^3.3.2"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.24",
+        "typescript": "^5.3.3"
+    }
+}
