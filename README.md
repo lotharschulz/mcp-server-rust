@@ -94,7 +94,7 @@ manual copy to the correct location - included in `npm run build:wasm:release`
 mkdir -p build/lib/rust-functions-lib/pkg && cp src/lib/rust-functions-lib/pkg/rust_funcations_lib.js build/lib/rust-functions-lib/pkg/rust_funcations_lib.js
 ```
 
-### rust import failed
+### Rust import failed
 
 issue:
 
