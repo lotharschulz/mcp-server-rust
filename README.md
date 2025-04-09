@@ -1,3 +1,5 @@
+A simple Rust function integrated with an MCP client.
+
 ## Step 1: Relase the Rust & Javascript/TS code
 
 ### Release
@@ -29,9 +31,20 @@ locations:
 - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 (source: https://modelcontextprotocol.info/docs/quickstart/user/#2-add-the-filesystem-mcp-server)
 
-## Step 3: Start Claude Desktop
+## Step 3: Claude Desktop
 
-TODO
+Start Claude Desktop
+
+![Claude Desktop Initial View](Claude_Desktop_Initial_View_detail.png)
+<sub>please note the additional mcp server icon in the frontend<sub>
+
+Agree to use the mcp server function:
+
+![Allow MCP server](consent_use_mcp_server_function01.png)
+
+Observe the mcp server function:
+
+![factorial function used](factorial_function_used_in-claude_desktop_detail.png)
 
 ## Misc
 
