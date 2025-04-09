@@ -93,3 +93,13 @@ manual copy to the correct location - included in `npm run build:wasm:release`
 ```sh
 mkdir -p build/lib/rust-functions-lib/pkg && cp src/lib/rust-functions-lib/pkg/rust_funcations_lib.js build/lib/rust-functions-lib/pkg/rust_funcations_lib.js
 ```
+
+### rust import failed
+
+issue:
+
+![rust import failed](rust-import-failed.png)
+
+solution:
+
+run `npm run build:wasm:release` to release the wasm-binding the factorial import depends on
