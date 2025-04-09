@@ -48,9 +48,7 @@ Observe the mcp server function:
 
 ### Video
 
-### Video
-
-<iframe width="560" height="315" src="https://youtu.be/DlD7uWniNyE" frameborder="0" allowfullscreen></iframe>
+Watch the video tutorial here: [YouTube video](https://youtu.be/DlD7uWniNyE)
 
 ## Misc
 
